@@ -1,0 +1,274 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/products.css">
+    
+    <title>Ecommerce- products</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">CareerLake</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orders.html">
+                  <span data-feather="file"></span>
+                  Orders
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">
+                  <span data-feather="shopping-cart"></span>
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">
+                  <span data-feather="users"></span>
+                  category
+                </a>
+              </li>
+              
+            </ul>
+    
+            
+          </div>
+        </nav>
+    
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Products</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#categoryModal">+Add</button>
+              </div>
+              
+            </div>
+          </div>
+
+
+          <div class="album py-5 bg-light">
+            <div class="container">
+              
+              <div class="row" id="product-container">
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    
+                    <img class="card-img-top" height="210" src="" alt="Card image cap" srcset="">
+                    <div class="card-body">
+                      
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </main>
+      </div>
+    </div>
+<div class="modal fade" id="productModal" tabindex="-1" role=""></div> 
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+          
+            <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+            <script src="./js/bootstrap.min.js"></script>
+            <script src="products.js"></script>
+    
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/dashboard.css" rel="stylesheet">
+	<title>careerLake Products</title>
+</head>
+<body>
+
+	 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"><span id="userName">careerLake</span></a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orders.html">
+                  <span data-feather="file"></span>
+                  Orders
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">
+                  <span data-feather="shopping-cart"></span>
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">
+                  <span data-feather="users"></span>
+                  Category
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Reports
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Integrations
+                </a>
+              </li> -->
+            </ul>
+
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h1 class="h2">Products</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2">
+                      <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#productModal">+Add</button>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="album py-5 bg-light">
+                  <div class="container">
+          
+                    <div class="row" id="product-container">
+                      <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                          <img class="card-img-top" height="210" src="https://rukminim1.flixcart.com/image/416/416/kuwzssw0/sofa-sectional/d/8/y/symmetrical-turquoise-blue-jute-turquoise-blu3-flipkart-perfect-original-imag7xdnzqamyadv.jpeg?q=70" alt="Card image cap">
+                          <div class="card-body">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </main>
+      </div>
+    </div>
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <!-- <div class="form-group">
+                    <label for="productImageId" class="col-form-label">Product Image:</label>
+                    <input type="file" name="file" class="form-control" id="productImageId" onchange="uploadImage(this)">
+                    <p id="productNameError"></p>
+                  </div> -->
+                  <div class="form-group">
+                    <label for="productPriceId" class="col-form-label">Product Price:</label>
+                  <select class="form-control form-control-lg" id="categoryId">
+                    <option value="">Select Category</option>
+                  </select>
+                  <p id="categoryError"></p>
+                </div>
+                  <div class="form-group">
+                    <label for="productNameId" class="col-form-label">Product Name:</label>
+                    <input type="text" class="form-control" id="productNameId">
+                    <p id="productNameError"></p>
+                  </div>
+                  <div class="form-group">
+                    <label for="productPriceId" class="col-form-label">Product Price:</label>
+                    <input type="number" class="form-control" id="productPriceId">
+                    <p id="productPriceError"></p>
+                  </div>
+                  <div class="form-group">
+                    <label for="quantityId" class="col-form-label">Quantity:</label>
+                    <input type="number" class="form-control" id="quantityId">
+                    <p id="quantityError"></p>
+                  </div>
+                  <div class="form-group">
+                    <label for="productDescriptionId" class="col-form-label">Product Description:</label>
+                    <textarea class="form-control" id="productDescriptionId"></textarea>
+                    <p id="productDescriptionError"></p>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelBtn">Close</button>
+                <button type="button" class="btn btn-primary" id="saveBtn">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script> -->
+      <script type="text/javascript" src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    
+    
+    
+<script type="text/javascript" src="./js/products.js"></script>
+</body>
+</html>
